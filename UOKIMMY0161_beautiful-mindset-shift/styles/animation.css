@@ -1,0 +1,154 @@
+.animate__animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes spinningWin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  90% {
+    transform: rotate(3724deg);
+  }
+
+  95% {
+    transform: rotate(3718deg);
+  }
+
+  100% {
+    transform: rotate(3721deg);
+  }
+}
+
+.spinning-win {
+  animation: spinningWin 4s ease normal forwards;
+}
+
+@keyframes spinningFailed {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  90% {
+    transform: rotate(3541deg);
+  }
+
+  95% {
+    transform: rotate(3537deg);
+  }
+
+  100% {
+    transform: rotate(3539deg);
+  }
+}
+
+.spinning-failed {
+  animation: spinningFailed 4s ease normal forwards;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.zoom-in-out {
+  animation: zoomInOut 1.5s ease-in-out infinite;
+}
+
+/* @keyframes clawDown {
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(46%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.claw-down {
+  animation: clawDown 3s ease normal forwards;
+}
+
+@keyframes clawedItem {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(-80%);
+  }
+}
+
+.clawed-item {
+  animation: clawedItem 2s ease normal forwards;
+  animation-delay: 1.5s;
+} */
+
+@keyframes clawDown {
+  0% {
+    transform: translateY(0%);
+  }
+
+  30% {
+    transform: translateY(42%);
+  }
+
+  70% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translate(-320%, 0);
+  }
+}
+
+.claw-down {
+  animation: clawDown 6s ease normal forwards;
+}
+
+@keyframes clawedItem {
+  0% {
+    transform: translateY(0%);
+  }
+
+  55% {
+    transform: translateY(-80%);
+  }
+
+  100% {
+    transform: translate(-170%, -80%);
+  }
+}
+
+.clawed-item {
+  animation: clawedItem 4s ease normal forwards;
+  animation-delay: 2s;
+}
+
+@keyframes dropClawedItem {
+  0% {
+    transform: translate(-170%, -80%);
+  }
+
+  100% {
+    transform: translate(-170%, 135%);
+  }
+}
+
+.drop-clawed-item {
+  animation: dropClawedItem 2s ease normal forwards;
+}
